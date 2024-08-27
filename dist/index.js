@@ -27,9 +27,15 @@ mongoose_1.default.connect(MONGO_DB_URL)
 // Express Application
 const app = (0, express_1.default)();
 // Middlewares
+app.use((req, res, next) => {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+    res.setHeader('Access-Control-Allow-Credentials', 'true');
+    next();
+});
 app.use((0, cors_1.default)({
     origin: FRONT_URL,
-    credentials: true,
 }));
 app.use(express_1.default.urlencoded({ extended: true }));
 app.use(express_1.default.json());
