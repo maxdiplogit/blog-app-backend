@@ -2,7 +2,6 @@ node_modules/
 
 *.tsbuildinfo
 
-dist/
 build/
 
 .env
