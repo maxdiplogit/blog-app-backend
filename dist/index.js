@@ -16,6 +16,7 @@ dotenv_1.default.config();
 const PORT = process.env.PORT || "";
 const MONGO_DB_URL = process.env.MONGO_DB_URL || "";
 const FRONT_URL = process.env.FRONT_URL || "";
+console.log("IDHAR DEKH: ", FRONT_URL);
 // Connecting to MongoDB Database
 mongoose_1.default.connect(MONGO_DB_URL)
     .then(() => {

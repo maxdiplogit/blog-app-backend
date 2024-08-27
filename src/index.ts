@@ -15,7 +15,7 @@ const PORT: string = process.env.PORT || "";
 const MONGO_DB_URL: string = process.env.MONGO_DB_URL || "";
 const FRONT_URL: string = process.env.FRONT_URL || "";
 
-console.log(FRONT_URL);
+console.log("IDHAR DEKH: ", FRONT_URL);
 
 
 
