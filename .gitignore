@@ -1,0 +1,17 @@
+node_modules/
+
+*.tsbuildinfo
+
+dist/
+build/
+
+.env
+
+.idea/
+.vscode/
+*.swp
+
+.DS_Store
+
+tmp/
+temp/
